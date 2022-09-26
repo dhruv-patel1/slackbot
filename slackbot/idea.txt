@@ -1,0 +1,28 @@
+//DEIB SLACK BOT IDEA//
+
+Requirements:
+- bot deployed to all public/private channels
+- do bot setup stuff in slack api
+- need to host app somewhere (Flask/Fast API?)
+- setup bot in workspace / setup event subscription
+    - add endpoint where app is running to capture messages 
+    - can setup to capture other events other than messages too
+
+- when capturing a message
+    - on the event get user, text, any mentions, or anything that we'd need 
+    to identify the scenario in which to dm the user with some pre-typed warning message
+    with links to resources
+    - try to maybe figure out a way to store how many times a user has been warned
+
+
+    -Identifying methods:
+        - Look for pro-nouns in the message and look at mentioned users pronouns
+            - if incorrect => dm warning
+            - if correct => continue to next check
+        - 
+
+    
+    
+- if escalating condition met, have bot open a message with the user that sent
+the message 
+    - have it post the message we want with anything else
